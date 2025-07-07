@@ -30,7 +30,7 @@
                 border-radius: 25px;
             }
 
-            main {
+            main, header, footer {
                 margin-left: auto;
                 margin-right: auto;
                 max-width: 768px;
@@ -56,8 +56,12 @@
                 padding: 0;
             }
 
-            h1{
+            h2{
                 text-decoration: underline;
+            }
+
+            h1, footer{
+                color: #102a43;
             }
 
             .project{
@@ -65,12 +69,26 @@
                 align-items: center;
                 justify-content: center;
             }
+
+            .wrapper{
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 768px;
+            }
+            header{
+                background-color: #ffffff;
+                border-radius: 0 20px 0 20px;
+                padding-left: 10px;
+            }
         </style>
     </head>
     <body>
-        <main>
+        <header class="wrapper">
+            <h1>Welcome to my portfolio</h1>
+        </header>
+        <main class="wrapper">
             <div>
-                <h1>About me</h1>
+                <h2>About me</h2>
                 <p>My name is <strong>Josip</strong> and this is my <strong>portfolio</strong>.</p>
                 <p>My skills include:</p>
                 <ul>
@@ -80,13 +98,13 @@
                 </ul>
             </div>
             <div>
-                <h1>Contact information</h1>
+                <h2>Contact information</h2>
                 <p>Email: <a href="mailto:josip@gmail.com">josip@gmail.com</a></p>
                 <p>Phone: <a href="tel:+38599999999">+385 99 999 9999</a></p>
                 <a href="https://hr.linkedin.com/">LinkedIn</a>
             </div>
             <div>
-                <h1>Projects</h1>
+                <h2>Projects</h2>
                 <ul>
                     <li>
                         <div class="project"><img src="media/company.png" alt="screenshot company"></div>
@@ -99,5 +117,8 @@
                 </ul>
             </div>
         </main>
+        <footer class="wrapper">
+            <p>&copy; Josip Zitkovic</p>
+        </footer>
     </body>
 </html>
