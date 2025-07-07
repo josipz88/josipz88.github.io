@@ -64,7 +64,7 @@
                 color: #102a43;
             }
 
-            .project{
+            .project, .table-main{
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -79,6 +79,19 @@
                 background-color: #ffffff;
                 border-radius: 0 20px 0 20px;
                 padding-left: 10px;
+            }
+            .pricelist{
+                border: 2px;
+                border-color: aqua;
+                padding: 25px;
+            }
+            .row-name, th, caption{
+                font-weight: 700;
+                font-size: 20px;
+            }
+            td{
+                padding: 8px;
+                text-align: center;
             }
         </style>
     </head>
@@ -115,6 +128,50 @@
                         <div class="project"><a href="https://github.com/josipz88/Company-site">Search bar</a></div>
                     </li>
                 </ul>
+            </div>
+            <div class="table-main">
+                <table border="1" class="pricelist">
+                    <caption>Price list:</caption>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Q1</th>
+                            <th>Q2</th>
+                            <th>Q3</th>
+                            <th>Q4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="row-name">Sat</td>
+                            <td>$10</td>
+                            <td>$12</td>
+                            <td>$14</td>
+                            <td>$20</td>
+                        </tr>
+                        <tr>
+                            <td class="row-name">Dan</td>
+                            <td>$75</td>
+                            <td>$90</td>
+                            <td>$105</td>
+                            <td>$150</td>
+                        </tr>
+                        <tr>
+                            <td class="row-name">Tjedan</td>
+                            <td>$500</td>
+                            <td>$610</td>
+                            <td>$720</td>
+                            <td>$1,000</td>
+                        </tr>
+                        <tr>
+                            <td class="row-name">Mjesec</td>
+                            <td>$1,800</td>
+                            <td>$2,300</td>
+                            <td>$2,700</td>
+                            <td>&infin;</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </main>
         <footer class="wrapper">
